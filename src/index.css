@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* YWCA Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+    
+    /* Primary - YWCA Purple */
+    --primary: 280 69% 35%; /* #6A1B9A */
+    --primary-light: 280 64% 41%; /* #8E24AA */
+    --primary-dark: 280 100% 22%; /* #4A0072 */
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - Gold */
+    --secondary: 45 100% 65%; /* #FFD54F */
+    --secondary-light: 45 100% 85%; /* #FFECB3 */
+    --secondary-dark: 45 100% 51%; /* #FFC107 */
+    --secondary-foreground: 280 69% 35%;
+    
+    /* Accent Colors */
+    --accent-pink: 340 82% 88%; /* #F8BBD0 */
+    --accent-cream: 48 100% 94%; /* #FFF8E1 */
+    --accent: 280 69% 35%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Neutral Colors */
+    --neutral-light: 0 0% 97%; /* #F7F7F7 */
+    --neutral-dark: 0 0% 20%; /* #333333 */
+    
+    /* Text Colors */
+    --text-primary: 0 0% 13%; /* #212121 */
+    --text-secondary: 0 0% 33%; /* #555555 */
+    
+    /* Background Variants */
+    --background-subtle: 0 0% 98%; /* #FAFAFA */
+    
+    /* UI Elements */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 33%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 280 20% 90%;
+    --input: 280 20% 90%;
+    --ring: 280 69% 35%;
+    
+    --radius: 1rem;
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 12px rgb(0 0 0 / 0.05);
+    --shadow-card: 0 6px 20px rgb(106 27 154 / 0.15);
+    --shadow-gold: 0 0 25px rgb(255 213 79 / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
